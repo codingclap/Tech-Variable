@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -5,73 +7,675 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/custome.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $(".toggle").on("click", function () {
-                if ($(".item").hasClass("active")) {
-                    $(".item").removeClass("active");
-                } else {
-                    $(".item").addClass("active");
-                }
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-    <div class="header">
+
+        <!----
+    ############################
+    ####   Navbar Section    ###
+    ############################
+    ---->
+    <div class="navbar max-1920">
         <a class="logo" href="/"><img src="assets/images/logo.svg" alt="logo"></a>
         <nav>
-            <ul class="menu noglitter">
+            <ul class="menu no-gutter">
                 <li class="item">
-                    <a href="#">Services <svg width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M7.0014 7.68389L9.8889 4.79639L10.7137 5.62122L7.0014 9.33355L3.28906 5.62122L4.1139 4.79639L7.0014 7.68389Z"
-                            fill="black" />
-                    </svg></a>
-                    
-                </li>
-                <li class="item">
-                    <a href="#">Our Processess <svg width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M7.0014 7.68389L9.8889 4.79639L10.7137 5.62122L7.0014 9.33355L3.28906 5.62122L4.1139 4.79639L7.0014 7.68389Z"
-                            fill="black" />
-                    </svg></a>
-                     
+                    <a href="#">Services <svg width="18" height="18" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.0014 7.68389L9.8889 4.79639L10.7137 5.62122L7.0014 9.33355L3.28906 5.62122L4.1139 4.79639L7.0014 7.68389Z"
+                                fill="black" />
+                        </svg></a>
 
                 </li>
-                <li class="item"><a href="#">Resources <svg width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M7.0014 7.68389L9.8889 4.79639L10.7137 5.62122L7.0014 9.33355L3.28906 5.62122L4.1139 4.79639L7.0014 7.68389Z"
-                        fill="black" />
-                </svg></a>
-                    
+                <li class="item">
+                    <a href="#">Our Processess <svg width="18" height="18" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.0014 7.68389L9.8889 4.79639L10.7137 5.62122L7.0014 9.33355L3.28906 5.62122L4.1139 4.79639L7.0014 7.68389Z"
+                                fill="black" />
+                        </svg></a>
+
+
                 </li>
-                <li class="item"><a href="#">Careers <svg width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M7.0014 7.68389L9.8889 4.79639L10.7137 5.62122L7.0014 9.33355L3.28906 5.62122L4.1139 4.79639L7.0014 7.68389Z"
-                        fill="black" />
-                </svg></a>
-                    
+                <li class="item"><a href="#">Resources <svg width="18" height="18" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.0014 7.68389L9.8889 4.79639L10.7137 5.62122L7.0014 9.33355L3.28906 5.62122L4.1139 4.79639L7.0014 7.68389Z"
+                                fill="black" />
+                        </svg></a>
+
+                </li>
+                <li class="item"><a href="#">Careers <svg width="18" height="18" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.0014 7.68389L9.8889 4.79639L10.7137 5.62122L7.0014 9.33355L3.28906 5.62122L4.1139 4.79639L7.0014 7.68389Z"
+                                fill="black" />
+                        </svg></a>
+
                 </li>
 
             </ul>
         </nav>
-        <div class="header-btn">
-            <a href="" class="btn btn-contact">Contact us <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.6689 6.276L4.93095 12.014L3.98828 11.0713L9.72561 5.33333H4.66895V4H12.0023V11.3333H10.6689V6.276Z" fill="#6633F2"/>
+        <div class="navbar-btn-container">
+            <a href="" class="btn btn-contact">Contact us <svg width="20" height="20" viewBox="0 0 16 16"
+                    class="navbar-btn-anchor" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.6689 6.276L4.93095 12.014L3.98828 11.0713L9.72561 5.33333H4.66895V4H12.0023V11.3333H10.6689V6.276Z"
+                        class="navbar-btn-arrow" fill="#6633F2" />
                 </svg>
-                </a>
+            </a>
         </div>
     </div>
+
+
+    <!----
+    ############################
+    ####   Header Section    ###
+    ############################
+    ---->
+    <header>
+        <section class="max-1920">
+            <div class="main-header">
+                <div class="main-header-content">
+                    <div class="row no-gutter text-center">
+                        <div class="col-lg-12">
+                            <h1 class="main-header-heading mb-0">Leap to the next milestone <span
+                                    class="d-block"></span>
+                            </h1>
+                            <p class="main-header-subheading">Take your idea from plan to product to profit 2x faster
+                            </p>
+                            <a href="https://www.techvariable.com/wp-content/themes/techvariable/case-studies/"
+                                class="btn btn-solid mt-5">View Success Stories</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="main-head-service text-center margin-top-120">
+                    <div class="main-head-tile">
+                        <div class="box-fill">
+                            <img src="/assets/images/application-coding.png" alt="" class="100%">
+                        </div>
+                        <div class="box-text">
+                            <p>Custom Application<br>Development</p>
+                        </div>
+                    </div>
+                    <div class="main-head-tile">
+                        <div class="box-fill">
+                            <img src="/assets/images/application-coding.png" alt="" class="100%">
+                        </div>
+                        <div class="box-text">
+                            <p>Data Engineering<br>Services</p>
+                        </div>
+                    </div>
+                    <div class="main-head-tile">
+                        <div class="box-fill">
+                            <img src="/assets/images/application-coding.png" alt="" class="100%">
+                        </div>
+                        <div class="box-text">
+                            <p>Product<br>Engineering</p>
+                        </div>
+                    </div>
+                    <div class="main-head-tile">
+                        <div class="box-fill">
+                            <img src="/assets/images/application-coding.png" alt="" class="100%">
+                        </div>
+                        <div class="box-text">
+                            <p>Agile Digital<br>Transformation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <svg id="wave" viewBox="0 0 500 500" preserveAspectRatio="none" style="z-index: -1; transform: translate(-10%, 5px);">
+            <path id="p2" d="M0, 250 C300, 120 400,  
+              350 600, 150 L500, 00 L0, 0 Z" style="stroke: none;  
+              fill:#F5F2FC;">
+            </path>
+          </svg>
+          <svg id="wave02" viewBox="0 0 500 500" preserveAspectRatio="none" style="z-index: -1; transform: translate(-5%, 30px);">
+            <path id="feel-the-wave" d="M0, 200 C250, 120 400,  
+              355 600, 150 L500, 00 L0, 0 Z" style="stroke: none;  
+              fill:#E5DFF7;">
+            </path>
+          </svg>
+    </header>
+    
 
     <div class="container-fluid">
 
     </div>
+
+
+    <!-- Engagement Models Section -->
+    <section class="section-2 engagement-models">
+        <h2>
+            <strong>Engagement</strong> <span data-font-family="poppins" data-font-weight="light">Models</span>
+        </h2>
+        <div class="flex-container">
+            <div class="engagement-card">
+                <img src="assets/images/engagement--complete-product-development.svg"
+                    alt="Complete product development/Engineering">
+                <h3>
+                    Complete Product
+                    <br> Development/Engineering
+                </h3>
+                <p>
+                    Get your custom software developed end-to-end. Best for MVP design & development as well as complete
+                    product engineering.
+                </p>
+            </div>
+
+            <div class="engagement-card">
+                <img src="assets/images/engagement--build-offshore-team.svg" alt="Build Offshore team">
+                <h3>
+                    Build Offshore
+                    <br>
+                    team
+                </h3>
+                <p>
+                    Get dedicated resources which act as an arm of your existing in-house engineering team. Ideal for
+                    SMBs & Corporates.
+                </p>
+            </div>
+
+            <div class="engagement-card">
+                <img src="assets/images/engagement--staff-augmentation.svg" alt="Staff Augmentation">
+                <h3>
+                    Staff
+                    <br>
+                    Augmentation
+                </h3>
+                <p>
+                    Create offshore dedicated development centres with us which acts as another wing for your
+                    organization.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section-3 case-studies">
+        <div class="section-text">
+            <h2>
+                <strong>Case</strong> <span data-font-family="poppins" data-font-weight="light">Studies</span>
+            </h2>
+            <p>
+                Our team has worked on projects across domains
+            </p>
+        </div>
+
+        <div class="case-studies-container">
+            <div class="case-study-card">
+                <div class="img-container">
+                    <img src="assets/images/case-study--smart-recon.png" alt="">
+                </div>
+
+                <div class="case-study-text">
+                    <div class="case-study-intro">
+                        <small>
+                            Industry:Fin-Tech
+                        </small>
+                        <h3>
+                            SMART RECON
+                        </h3>
+                        <p>
+                            A SAAS automate tedious financial reconciliation processes. We built an independent, fully
+                            integrated app that automated the process of identifying mismatches between large sets of
+                            accounting data, and simplified the management of these exceptions......
+                        </p>
+                    </div>
+
+                    <div class="case-study-numerical-data">
+                        <div class="employees">
+                            <h4>
+                                06
+                            </h4>
+                            <p>
+                                Engineers
+                            </p>
+                        </div>
+                        <div class="time">
+                            <h4>
+                                04
+                            </h4>
+                            <p>
+                                Months
+                            </p>
+                        </div>
+                        <div class="performance">
+                            <h4>
+                                90%
+                            </h4>
+                            <p>
+                                Reduction in
+                                <br>
+                                operation cost
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services">
+                        <h4>Services :</h4>
+                        <p>Scalable Architecture Designing, Rapid Application Development, Product Engineering</p>
+                    </div>
+
+                    <div class="technology">
+                        <h4>Technology :</h4>
+                        <p>Python, React.js, MongoDB, PostgreSQL</p>
+                    </div>
+
+                    <button class="case-study-button btn">
+                        Read full case study &rarr;
+                    </button>
+                </div>
+
+                <div class="btn-container">
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Milestone -->
+    <section class="section-4 milestone">
+        <div class="milestone--main-container">
+            <div class="main-section-heading">
+                <h2>
+                    <strong>
+                        What's your
+                    </strong> <span data-font-weight="light">
+                        Next Milestone?
+                    </span>
+                </h2>
+            </div>
+
+            <div class="main-section-container">
+                <div class="milestone--card-slider">
+
+                </div>
+
+                <div class="milestone--text-area">
+                    <p>
+                        Are you ready to build a full scale product to take to market, or are looking to improve
+                        internal efficiencies with a learning/training/process management module? Do you plan to test an
+                        idea with an MVP or demonstrate a Proof of Concept to an investor? Whatever your next objective
+                        is, we understand that every day you go without it carries an opportunity cost. Allow our teams
+                        of versatile developers and seasoned project managers to partner you from planning to execution
+                        of your ideas. You’ll love our energy, find confidence in our expertise, and enjoy the feeling
+                        of being amongst friends as you Leap to The Next Milestone.
+                    </p>
+                </div>
+
+                <button class="book-a-call btn btn-dark">Book a Call</button>
+            </div>
+        </div>
+
+        <div class="milestone--card-container">
+            <div class="card">
+                <div class="card--inner">
+                    <div class="card--face card--face-front">
+                        I have a product idea. Hence I am looking for an end to end product development team urgently
+                    </div>
+                    <div class="card--face card--face-back">
+                        We have end to end in-house capabilities for small to large product development projects. From
+                        collaborating on Product Requirement Documentation, creating information architectures and
+                        wireframes, designing as well as developing responsive web portals to mobile apps or data
+                        analysis platforms, our teams have the expertise to turn your idea into a successful product.
+                        Our robust processes enable product managers, UI-UX team, frontend-backend developers and
+                        Project Managers to collaborate deeply, develop rapidly and maintain complete transparency with
+                        clients.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card--inner">
+                    <div class="card--face card--face-front">
+                        I would like to extract insights and make business decisions based on my enterprise data.
+                    </div>
+                    <div class="card--face card--face-back">
+                        An enterprise typically has several departments, each with massive amounts of data residing in
+                        siloed storages. We can assist you in aggregating all business data on an omni-channel data
+                        platform, and simplifying data management, visualization and generation of insightful reports
+                        that help business decisions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card--inner">
+                    <div class="card--face card--face-front">
+                        My requirement document/wireframe designs are ready. I need an effort estimation for my software
+                        development project.
+                    </div>
+                    <div class="card--face card--face-back">
+                        Our team of project managers carefully analyse your requirements to identify functional and
+                        non-functional flows within the project, besides working out the business logic and the
+                        complexities within it. An estimation is then made of the number of resources required basis
+                        cost and time constraints, to present a transparent, all-inclusive cost estimate.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card--inner">
+                    <div class="card--face card--face-front">
+                        I want to modernize my business operations and digitally transform all my legacy systems.
+                    </div>
+                    <div class="card--face card--face-back">
+                        As the world moves towards everything digital, businesses need to modernise their systems to
+                        stay competitive; indeed, to even stay operational. Our Digital Transformation Team can
+                        thoroughly examine your business operations to identify areas where a technology upgrade is
+                        critical, or can add value. Based on such analysis, we can provide effective solutions for a
+                        fast, comprehensive,painless transformation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo area -->
+    <section class="section-5 promo-area">
+        <div class="main-section-text">
+            <h2>
+                Our Competitive Advantage
+            </h2>
+            <p>
+                We offer reliable, efficient delivery with high-caliber engineers & finely-tuned software development
+                processes.
+            </p>
+        </div>
+
+        <div class="promo-icons-container">
+            <div class="col-1">
+                <div class="icon">
+                    <picture>
+                        <img src="assets/images/promo--timely-delivery-with-quality.svg" alt="icon">
+                    </picture>
+                    <h3>
+                        Timely Delivery with Quality
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quisquam, quia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="icon">
+                    <picture>
+                        <img src="assets/images/promo--high-employee-retention.svg" alt="icon">
+                    </picture>
+                    <h3>
+                        High-Employee Retention
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quisquam, quia.
+                    </p>
+                </div>
+
+                <div class="icon">
+                    <picture>
+                        <img src="assets/images/promo--think-from-customer-perspective.svg" alt="icon">
+                    </picture>
+                    <h3>
+                        Think from Customer's Perspective
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quisquam, quia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="icon">
+                    <picture>
+                        <img src="assets/images/promo--software-architecture-which-scales.svg" alt="icon">
+                    </picture>
+                    <h3>
+                        Software Architecture which scales
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quisquam, quia.
+                    </p>
+                </div>
+
+                <div class="icon">
+                    <picture>
+                        <img src="assets/images/promo--agile-project-management.svg" alt="icon">
+                    </picture>
+                    <h3>
+                        Agile Project Management
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quisquam, quia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="icon">
+                    <picture>
+                        <img src="assets/images/promo--pick-your-own-team.svg" alt="icon">
+                    </picture>
+                    <h3>
+                        Pick your Own Team
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quisquam, quia.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Blogs -->
+    <section class="section-6 blogs">
+        <div class="main-section-heading">
+            <h2>
+                <strong>
+                    Blogs
+                </strong> <span data-font-weight="light">
+                    & Articles
+                </span>
+            </h2>
+            <p>
+                Check out the new stories published by our team
+            </p>
+        </div>
+
+        <div class="blogs-container">
+            <div class="blog-thumbnail">
+                <picture>
+                    <img src="" alt="blog-thumbnail">
+                </picture>
+                <h4>Blog type</h4>
+                <h3>Blog heading</h3>
+                <div class="writers-info">
+                    <div class="writer-image">
+                        <img src="" alt="writer-image">
+                    </div>
+                    <div class="writer-details">
+                        <h5>Writers name</h5>
+                        <p>Date of publish</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button>
+                View more
+            </button>
+        </div>
+    </section>
+
+    <!-- project cost -->
+    <section class="section-7">
+        <div class="main-container">
+            <div class="development-process-container">
+                <h2>OUR PRODUCT DEVELOPMENT PROCESS</h2>
+                <p>
+                    The article also demonstrates our process on project estimation and delivery
+                </p>
+                <button>
+                    Read Here
+                </button>
+            </div>
+            <div class="project-cost-container">
+                <h2>WANT TO CALCULATE YOUR PROJECT COST?</h2>
+                <p>
+                    Answer some questions and get a free high-level cost estimation
+                </p>
+                <button>
+                    Calculate Here
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- client testimonials -->
+    <section class="section-8 testimonials">
+        <div class="main-section-text">
+            <h2>
+                <strong>
+                    Client
+                </strong><span data-font-weight="light">
+                    Testimonials
+                </span>
+            </h2>
+            <p>
+                What do our clients say about our services
+            </p>
+        </div>
+
+        <div class="testimonials-container">
+            <div class="whole-slider">
+                <div class="slider-outer-container">
+                    <div class="btn-container">
+                        <button class="btn" onclick="prevSlide()">&#10094;</button>
+                        <button class="btn" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                    <div class="slider-container">
+
+                    </div>
+
+                    <div class="pagination-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="pagination">
+                            <g class="pagination-circles">
+                                <circle cx=15 cy=15 r=10 />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-row-1">
+            <div class="col col-1">
+                <h3>Services</h3>
+                <ul>
+                    <li>Product Engineering</li>
+                    <li>Custom Application Development</li>
+                    <li>Minimum Viable Product</li>
+                    <li>Data Engineering</li>
+                </ul>
+            </div>
+            <div class="col col-2">
+                <h3>Our Process</h3>
+                <ul>
+                    <li>IP Protection</li>
+                    <li>Engineering Best Practices</li>
+                    <li>How We Deliver</li>
+                    <li>Agile Transformation</li>
+                </ul>
+            </div>
+            <div class="col col-3">
+                <h3>Resources</h3>
+                <ul>
+                    <li>Blogs</li>
+                    <li>Case Study</li>
+                    <li>News & Media</li>
+                    <li>Employee Story</li>
+                    <li>Head of Delivery</li>
+                </ul>
+            </div>
+            <div class="col col-4">
+                <h3>Careers</h3>
+                <ul>
+                    <li>Refer & Earn</li>
+                    <li>Job Openings</li>
+                    <li>Talent Incubator</li>
+                    <li>Campus Ambassador</li>
+                </ul>
+            </div>
+            <div class="col col-5">
+                <h3>Our offices</h3>
+                <ul>
+                    <li>
+                        <strong>ASSAM:</strong>
+                        <br>
+                        <span>
+                            Navagiri Path, RedCross Byelane, 53B, Chandmari, Guwahati, Assam, 781003
+                        </span>
+
+                    </li>
+                    <li>
+                        <strong>USA:</strong>
+                        <br>
+                        <span>
+                            TechVariable, Inc., 99 Wall Street #4015, New York, 10005, USA
+                        </span>
+
+                    </li>
+                    <li>
+                        <span><img src="assets/images/email-icon.svg" alt="email: "></span>
+                        <span>info@techvariable.com</span>
+                    </li>
+                    <li>
+                        <span><img src="assets/images/phone-icon.svg" alt="phone: "></span>
+                        <span>+91 7578805615</span>
+                    </li>
+            </div>
+        </div>
+        <div class="footer-row-2">
+            <div class="footer-logo">
+                <picture>
+                    <img src="assets/images/logo.svg" alt="logo">
+                </picture>
+            </div>
+            <div class="copyright">
+                &copy; 2022 TECHVARIABLE ALL RIGHTS RESERVED
+            </div>
+            <div class="social-media">
+                <a href="facebook" class="social-media-icon"><img src="" alt="facebook"></a><a href="linkedin"
+                    class="social-media-icon"><img src="" alt="linkedin"></a><a href="instagram"
+                    class="social-media-icon"><img src="" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/flip-card.js"></script>
+    <script src="assets/js/vs-creation.js"></script>
+    <script src="assets/js/vs-slide.js"></script>
 </body>
 
 </html>

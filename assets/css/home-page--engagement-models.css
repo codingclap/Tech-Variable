@@ -1,0 +1,74 @@
+
+.engagement-models {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.engagement-models h2 {
+    position: relative;
+    line-height: 1;
+}
+
+.engagement-models h2::after,
+.engagement-models h2::before {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 1px;
+    background-color: #6633F2;
+}
+
+.engagement-models h2::before {
+    left: 0;
+    transform: translate(-120%, calc(var(--h2-size)/2));
+}
+
+.engagement-models h2::after {
+    right: 0;
+    transform: translate(120%, calc(var(--h2-size)/2));
+}
+
+.engagement-models .flex-container {
+    --card-max-width: 370px;
+    --card-min-width: 335px;
+    flex-wrap: wrap;
+    margin: 5vmin auto 10vmin;
+}
+
+.flex-container .engagement-card {
+    --card-inner-margin: 0.5em;
+    min-width: var(--card-min-width);
+    max-width: var(--card-max-width);
+    width: 10rem;
+    height: 343px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 0.5em;
+    padding: 2em 1.5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-in-out,
+        border 0.5s ease-in-out;
+    background-color: white;
+}
+
+.flex-container .engagement-card img {
+    width: 50%;
+}
+
+.flex-container .engagement-card h3 {
+    font-size: var(--h3-size);
+    margin: var(--card-inner-margin) auto;
+}
+
+.flex-container .engagement-card p {
+    font-size: var(--p-card-size);
+    margin: var(--card-inner-margin) auto;
+
+}
+
+.flex-container .engagement-card:hover {
+    border-color: blue;
+    box-shadow: 0 0 5em -3.5em blue;
+}

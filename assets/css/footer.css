@@ -1,0 +1,29 @@
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-row-1,
+.footer-row-2 {
+    width: 100%;
+    padding: 2% 5%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-row-1 .col {
+    width: 20%;
+    text-align: left;
+    padding: 1em;
+}
+
+.footer-row-2 {
+    border-top: 2px solid gray;
+}

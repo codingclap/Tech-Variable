@@ -1,0 +1,54 @@
+:root {
+    --flipable-card-width: 200px;
+}
+
+.card {
+    aspect-ratio: 317/372;
+    width: var(--flipable-card-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 600px;
+    background-color: transparent;
+}
+
+.card--inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #0004;
+    border: 1px solid #0005;
+    transform: rotateY(0deg);
+}
+
+.card--inner[data-is-flipped="true"] {
+    transform: rotateY(180deg);
+}
+
+.card--face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card--face-front {
+    background: url(../images/question-mark.svg) no-repeat right;
+    
+}
+
+.card--face-back {
+    transform: rotateY(180deg);
+    background-color: white;
+}

@@ -1,0 +1,94 @@
+.promo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--case-study-bg);
+}
+
+.promo-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+.promo-icons-container .col-2,
+.promo-icons-container .col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.icon {
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 1em;
+    aspect-ratio: 1/1;
+    width: 300px;
+    text-align: center;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.icon > * {
+    transform: translateY(3rem);
+    transition: transform 0.5s ease-in-out,
+        color 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.icon picture {
+    height: 80px;
+    width: 150px;
+}
+
+.icon h3 {
+    margin: 1em auto 1em;
+    font-size: 1.5em;
+}
+
+.icon p {
+    transform: translateY(200%);
+}
+
+.icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--icon-blue);
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.icon:hover::after,
+.icon:focus::after {
+    transform: translateY(0);
+}
+
+.icon:hover > *,
+.icon:focus > * {
+    transform: translateY(-3rem);
+    color: white;
+}
+
+.icon:hover > picture,
+.icon:focus > picture {
+    transform: translateY(-10rem);
+}

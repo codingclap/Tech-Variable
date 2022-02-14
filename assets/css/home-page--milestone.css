@@ -1,0 +1,20 @@
+@import url(flip-card.css);
+
+.milestone {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.milestone--main-container {
+    width: 50%;
+}
+
+.milestone--card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2em;
+}
